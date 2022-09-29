@@ -18,10 +18,15 @@
 				/>
 				<!-- <p v-if="isInitial || isSuccess"> -->
 				<p v-if="isInitial">
-					Drag your file(s) here to begin<br> or click to browse
+					Drag your file(s) here to begin
+					<br> or click to browse
 				</p>
-				<p v-if="isSaving">Uploading {{ fileCount }} files...</p>
-				<p v-if="isSuccess">Upload Successful.</p>
+				<p v-if="isSaving">
+					Uploading {{ fileCount }} files...
+				</p>
+				<p v-if="isSuccess">
+					Upload Successful.
+				</p>
                 <p v-if="isFailed">Upload Failed.</p>
 			</div>
 		</form>
